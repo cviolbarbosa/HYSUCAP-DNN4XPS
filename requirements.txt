@@ -1,0 +1,3 @@
+xylib_py==1.6.1
+pySPM==0.2.23
+nlopt

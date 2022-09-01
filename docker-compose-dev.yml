@@ -1,0 +1,17 @@
+version: '3'
+services:
+  DNN4XPS:
+    build: .
+    ports:
+      - 8889:8888
+    volumes:
+      - ./output:/root/output
+      - ./input:/root/input
+      - ./src:/root/code
+      - ./trained_models:/root/trained_models
+      - ./DNN4XPS.ipynb:/root/DNN4XPS.ipynb
+
+    environment:
+      - INPUT_PATH=/root/input
+      - OUTPUT_PATH=/root/output
+    

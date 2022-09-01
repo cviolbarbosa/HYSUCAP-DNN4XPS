@@ -1,0 +1,16 @@
+version: '3'
+services:
+  DNN4XPS:
+    image: sciencedesk/dnn-xps-ti2:latest
+    ports:
+      - 8889:8888
+    volumes:
+      - ./output:/root/output
+      - ./input:/root/input
+      - ./trained_models:/root/trained_models
+      - ./DNN4XPS.ipynb:/root/DNN4XPS.ipynb:ro
+
+    environment:
+      - INPUT_PATH=/root/input
+      - OUTPUT_PATH=/root/output
+    

@@ -1,0 +1,16 @@
+name: conda_environment
+channels:
+  - conda-forge
+  - defaults
+  - anaconda 
+dependencies:
+  - python=3.8
+  - tensorflow-mkl=2.5
+  - scikit-learn=1.1.1
+  - jupyter=1.0.0
+  - pandas
+  # data parsers
+  # - openpyxl=3.0.7
+  # - hyperspy-base=1.6.4
+  # - igor
+  # - xlrd=1.2.0
