@@ -15,7 +15,7 @@ After docker is installed run the command:
 ```
 docker-compose up
 
-``
+```
 
 Open the browser and type `http://localhost:8889/notebooks/DNN4XPS.ipynb#`
 
